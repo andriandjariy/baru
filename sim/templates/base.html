@@ -1,8 +1,8 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="{{ url_for ('static', filename=" css/bootstrap.min.css")}}">
-	<link rel="stylesheet" href="{{url_for('static', filename=" css/style.css")}}">
+	<link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 
 	<title>SISTEM INFORMASI PENGADUAN ANDRIAN</title>
 </head>
@@ -19,8 +19,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="{{ url_for ('vmahasiswa.home')}}">Home <span
-								class="sr-only">(current)</span></a>
+						<a class="nav-link" href="{{ url_for ('vmahasiswa.home')}}">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="{{ url_for ('vmahasiswa.about')}}">About</a>
@@ -69,8 +68,7 @@
 				<div class="shadow p-3 mb-5 bg-white rounded">
 					{%if current_user.is_authenticated%}
 					<div class="card" style="width: 18rem;">
-						<img src="{{url_for('static', filename=" img/" + current_user.foto)}}" class="card-img-top"
-							alt="...">
+						<img src="{{url_for('static', filename=" img/" + current_user.foto)}}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">{{current_user.nama}}</h5>
 							<p class="card-text">{{current_user.email}}</p>
