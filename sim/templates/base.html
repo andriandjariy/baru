@@ -68,7 +68,7 @@
 				<div class="shadow p-3 mb-5 bg-white rounded">
 					{%if current_user.is_authenticated%}
 					<div class="card" style="width: 18rem;">
-						<img src="{{url_for('static', filename=" img/" + current_user.foto)}}" class="card-img-top" alt="...">
+						<img src="{{url_for('static', filename='' img/ + current_user.foto')}}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">{{current_user.nama}}</h5>
 							<p class="card-text">{{current_user.email}}</p>
